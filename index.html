@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo">
+    </header>
+    <main>
+        <div class="left">
+            <textarea name="" id="texto">Ingresar texto</textarea>
+            <i>Solo letras en minusculas y sin acentos</i>
+            <div class="botones">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar" class="transparent">Desencriptar</button>
+            </div>
+        </div>
+        <div class="right">
+            <textarea name="" id="resultado" disabled>No se ha encontrado ningún texto</textarea>
+                <button id="copiar" class="transparent">Copiar</button>
+        </div>
+    </main>
+    <footer>
+        <div id="creador">
+            <p>Creado por: Yessica Rueda Ledesma Julio 2024</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+i{margin: 10px;
+  font-size:15px;
+}
+img{
+  width: 70px;
+  margin: 10px 0 0 90px;
+}
+header{
+  height: 10%;
+}
+main { 
+  margin: 0 10% 0 15%;
+  height: 85%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+}
+.left {
+  width: 65%;
+  height: 90%;
+  justify-content: center;
+}
+
+#texto {
+  background-color: #83c8ad;
+  margin-top: 50px;
+  height: 80%;
+}
+.botones {
+  width: 300px;
+  margin: 20px auto;
+}
+#encriptar {
+  margin-right: 30px;
+  background-color: #83c8ad;
+}
+.right {
+  border-radius: 20px;
+  width: 35%;
+  height: 95%;
+  background-color: #a8e1cb;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+}
+#resultado {
+  margin-top: 20px;
+  background-color: transparent;
+  height: 85%;
+  width: 90%;
+}
+button {
+  padding: 9px 10px;
+  font-size: 1.3em;
+  border-radius: 20px;
+  border: 0;
+}
+.transparent {
+  background-color: transparent;
+  border: 1px solid;
+}
+textarea {
+  padding: 40px 15px;
+  border: 0;
+  color: rgba(0, 0, 0, 0.544);
+  font-size: 2em;
+  resize: none;
+  width: 100%;
+  border-radius: 20px;
+}
+footer {
+  border: 5px solid #a8e1cb;
+  border-bottom: none;
+  height: 5%; 
+  width: 60%;
+  align-content: center;
+  margin: auto;
+}
+p {
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  font-family: "Playpen Sans";
+}
+@media (max-width: 768px) {
+  img{
+    margin-left: 20px;
+  }
+  main {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .left {
+    margin: 0;
+    height: 45%;
+    width: 100%;
+  }
+  .botones{
+    margin-top: 5px;
+  }
+  .right {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+  }
+  #texto {
+    margin: 0;
+    height: 70%;
+  }
+  #resultado {
+    height: 70%;
+  }
+}
+@media (max-width: 425px) {
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  img{
+    width: 50px;
+    margin-left: 0 8px;
+  }
+  header{
+    height: auto;
+  }
+  main {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .left {
+    height: 45%;
+    width: 100%;
+  }
+  .botones{
+    width: 90%;
+    margin: 20px auto;
+  }
+  button{
+    font-size: 1.2em;
+    padding: 4px 8px;
+  }
+  .right {
+    height: 50%;
+  }
+  footer{
+    height: 40px;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  #texto {
+    width: 100%;
+    height: 70%;
+  }
+  textarea{
+    font-size: 1.2em;
+  }
+  #resultado {
+    height: 75%;
+  }
+}
+
