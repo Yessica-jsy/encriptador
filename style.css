@@ -6,17 +6,16 @@
 body {
   margin: 0;
   height: 100vh;
+/*background-color: #00000023;*/
 }
-i{margin: 10px;
-  font-size:15px;
+header{
+  height: 10%;
 }
 img{
   width: 70px;
   margin: 10px 0 0 90px;
 }
-header{
-  height: 10%;
-}
+
 main { 
   margin: 0 10% 0 15%;
   height: 85%;
@@ -31,40 +30,49 @@ main {
 }
 
 #texto {
-  background-color: #83c8ad;
+  background-color: #83bec82b;
   margin-top: 50px;
   height: 80%;
+}
+#encriptar {
+  margin-right: 30px;
+  background-color: #83bec82b;
+}
+.adv{
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+.adv>p{
+  color: #676767;
 }
 .botones {
   width: 300px;
   margin: 20px auto;
 }
-#encriptar {
-  margin-right: 30px;
-  background-color: #83c8ad;
-}
+
 .right {
   border-radius: 20px;
   width: 35%;
   height: 95%;
-  background-color: #a8e1cb;
+  background-color: #5ad8ee2b;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   align-items: center;
 }
+#puppy{
+  width: 200px; 
+  height: 300px;
+  margin: 13% auto;
+}
 #resultado {
-  margin-top: 20px;
   background-color: transparent;
   height: 85%;
   width: 90%;
 }
-button {
-  padding: 9px 10px;
-  font-size: 1.3em;
-  border-radius: 20px;
-  border: 0;
-}
+
+
 .transparent {
   background-color: transparent;
   border: 1px solid;
@@ -78,17 +86,24 @@ textarea {
   width: 100%;
   border-radius: 20px;
 }
+button {
+  padding: 9px 10px;
+  font-size: 1.3em;
+  border-radius: 20px;
+  border: 0;
+}
+
+
 footer {
-  border: 5px solid #a8e1cb;
+  border: 5px solid #83bec82b;
   border-bottom: none;
   height: 5%; 
   width: 60%;
   align-content: center;
   margin: auto;
 }
-p {
+#creador > p {
   width: 100%;
-  padding: 0 10px;
   text-align: center;
   font-family: "Playpen Sans";
 }
@@ -145,11 +160,17 @@ p {
     width: 100%;
   }
   .botones{
-    width: 90%;
-    margin: 20px auto;
+    width: 80%;
+    margin: 9px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .adv{
+    margin-top: 3px;
+    width: 221px;
   }
   button{
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 4px 8px;
   }
   .right {
@@ -160,6 +181,9 @@ p {
     width: 100%;
     font-size: 0.8em;
   }
+  p{
+    font-size:0.6em;
+  }
   #texto {
     width: 100%;
     height: 70%;
@@ -169,6 +193,7 @@ p {
   }
   #resultado {
     height: 75%;
+    margin-top: 0;
   }
 }
 
