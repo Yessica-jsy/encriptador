@@ -12,7 +12,7 @@ text.addEventListener("click", function () {
 //funcion
 function initialize() {
   assignText(
-    "texto","Ingresar el testo que se desea desencriptar o encriptar");
+    "texto","Ingresar el texto que se desea desencriptar o encriptar");
   assignText("resultado", "No se ha encontrado el texto"); 
   document.getElementById('puppy').removeAttribute('hidden')
 }
@@ -31,10 +31,11 @@ encrit.addEventListener("click", function () {
   .replace(/e/gi, "enter")
   .replace(/i/gi, "imes")
   .replace(/a/gi, "ai")
-    .replace(/o/gi, "ober")
-    .replace(/u/gi, "uful");
+  .replace(/o/gi, "ober")
+  .replace(/u/gi, "uful");
   result.value = remplasar;
   document.getElementById('puppy').setAttribute('hidden', 'true')
+  document.getElementById('copiar').removeAttribute('hidden')
   return;
 });
 desencrit.addEventListener("click", function () {
@@ -51,6 +52,7 @@ desencrit.addEventListener("click", function () {
   .replace(/enter/gi, "e");
   result.value = reemplasar;
   document.getElementById('puppy').setAttribute('hidden', 'true')
+  document.getElementById('copiar').removeAttribute('hidden')
   return;
 });
 copy.addEventListener("click", function () {

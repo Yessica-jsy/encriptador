@@ -62,9 +62,8 @@ main {
   align-items: center;
 }
 #puppy{
-  width: 200px; 
-  height: 300px;
-  margin: 13% auto;
+  width: 85%; 
+  margin: auto;
 }
 #resultado {
   background-color: transparent;
@@ -115,6 +114,10 @@ footer {
     flex-direction: column;
     width: 80%;
     margin: auto;
+  }
+  #puppy{
+    height: 200px;
+    width: 200px;
   }
 
   .left {
