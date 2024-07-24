@@ -194,6 +194,10 @@ footer {
   textarea{
     font-size: 1.2em;
   }
+   #puppy{
+    height: 200px;
+    width: 200px;
+  }
   #resultado {
     height: 75%;
     margin-top: 0;
